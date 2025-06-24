@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+    <h2>student registration form (All Input Types)</h2>
+    <form>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="class_time">Preferred Class Time:</label><br>
+        <input type="time" id="class_time" name="class_time"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male"> Male<br>
+        <input type="radio" id="female" name="gender" value="female"> Female<br>
+        <input type="radio" id="other" name="gender" value="other"> Other<br><br>
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="reading"> Reading<br>
+        <input type="checkbox" id="sports" name="hobbies" value="sports"> Sports<br>
+        <input type="checkbox" id="music" name="hobbies" value="music"> Music<br>
+        <input type="checkbox" id="coding" name="hobbies" value="coding"> Coding<br><br>
+
+        <input type="submit" value="Register">
+    </form>
+    
+</head>
+<body>
+
+<form>
+<p>Hobbies:<br>
+        <input type="checkbox" name="hobby" value="Reading"> Reading<br>
+        <input type="checkbox" name="hobby" value="Sports"> Sports<br>
+        <input type="checkbox" name="hobby" value="Music"> Music<br>
+        <input type="checkbox" name="hobby" value="Coding"> Coding<br>
+    </p>
+ <p>Country:<br>
+        <select name="country">
+            <option value="">--Select--</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Other">Other</option>
+        </select>
+    </p>
+<p>Profile Description:<br>
+        <textarea name="description" rows="4" cols="40"></textarea>
+    </p>
+<p>Rate Your Interest (1–10):<br>
+        <input type="range" name="interest" min="1" max="10">
+    </p>
+
+    <p>Favorite Color:<br>
+        <input type="color" name="color">
+    </p>
+
+    <p>Upload Resume or Photo:<br>
+        <input type="file" name="resume">
+    </p>
+
+    <p>Your Website:<br>
+        <input type="url" name="website">
+    </p>
+
+    <p>Search Subject:<br>
+        <input type="search" name="search">
+    </p>
+
+    <p>
+        <input type="checkbox" name="terms"> I agree to Terms
+    </p>
+    <p>
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+        <input type="button" value="Click Me">
+    </p>
+</form>
+</body>
+</html>
