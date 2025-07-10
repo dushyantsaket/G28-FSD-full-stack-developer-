@@ -1,95 +1,348 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Student Registration Form</title>
-</head>
-    <h2>student registration form (All Input Types)</h2>
-    <form>
-        <label for="fullname">Full Name:</label><br>
-        <input type="text" id="fullname" name="fullname"><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"><br><br>
-
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone"><br><br>
-
-        <label for="age">Age:</label><br>
-        <input type="number" id="age" name="age"><br><br>
-
-        <label for="dob">Date of Birth:</label><br>
-        <input type="date" id="dob" name="dob"><br><br>
-
-        <label for="class_time">Preferred Class Time:</label><br>
-        <input type="time" id="class_time" name="class_time"><br><br>
-
-        <label>Gender:</label><br>
-        <input type="radio" id="male" name="gender" value="male"> Male<br>
-        <input type="radio" id="female" name="gender" value="female"> Female<br>
-        <input type="radio" id="other" name="gender" value="other"> Other<br><br>
-
-        <label>Hobbies:</label><br>
-        <input type="checkbox" id="reading" name="hobbies" value="reading"> Reading<br>
-        <input type="checkbox" id="sports" name="hobbies" value="sports"> Sports<br>
-        <input type="checkbox" id="music" name="hobbies" value="music"> Music<br>
-        <input type="checkbox" id="coding" name="hobbies" value="coding"> Coding<br><br>
-
-        <input type="submit" value="Register">
-    </form>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Advertise - Car Marketplace</title>
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
+ 
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-circle">
+                        <img height="40" src="https://65e6c5c98f1f1c614d8d87d2--extraordinary-crepe-efa409.netlify.app/Images/wol.png"alt="logo">
 
-<form>
-<p>Hobbies:<br>
-        <input type="checkbox" name="hobby" value="Reading"> Reading<br>
-        <input type="checkbox" name="hobby" value="Sports"> Sports<br>
-        <input type="checkbox" name="hobby" value="Music"> Music<br>
-        <input type="checkbox" name="hobby" value="Coding"> Coding<br>
-    </p>
- <p>Country:<br>
-        <select name="country">
-            <option value="">--Select--</option>
-            <option value="India">India</option>
-            <option value="USA">USA</option>
-            <option value="UK">UK</option>
-            <option value="Other">Other</option>
-        </select>
-    </p>
-<p>Profile Description:<br>
-        <textarea name="description" rows="4" cols="40"></textarea>
-    </p>
-<p>Rate Your Interest (1–10):<br>
-        <input type="range" name="interest" min="1" max="10">
-    </p>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#view-adds" class="nav-link">View Adds</a></li>
+                    <li><a href="#create-add" class="nav-link">Create Add</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="profile-icon">
+                    <img height="40px" src="https://65e6c5c98f1f1c614d8d87d2--extraordinary-crepe-efa409.netlify.app/Images/Avatar.png"alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <p>Favorite Color:<br>
-        <input type="color" name="color">
-    </p>
+   
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">Welcome To <span class="hero-title-gradient">Ride Advertise</span></h1>
+            <div class="hero-image">
+                <img src="https://65e6c5c98f1f1c614d8d87d2--extraordinary-crepe-efa409.netlify.app/Images/carsh.jpg" alt="Car Advertisement" class="hero-img">
+            </div>
+        </div>
+    </section>
 
-    <p>Upload Resume or Photo:<br>
-        <input type="file" name="resume">
-    </p>
+    <section id="view-adds" class="car-listings">
+        <div class="container">
+            <h2 class="section-title">All Available cars</h2>
+            <div class="car-grid">
+                
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://s7ap1.scene7.com/is/image/tatamotors/TornadoBlue-0-1?$PO-750-500-S$&fit=crop&fmt=png-alpha" alt="Tata Punch">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Tata Punch</h3>
+                        <p class="car-detail">Brand: Tata</p>
+                        <p class="car-detail">Model: 2010</p>
+                        <p class="car-detail">Type: Manual</p>
+                        <p class="car-detail">Price: ₹7,60,000</p>
+                        <p class="car-detail">Location: lucknow uttar pradesh</p>
+                        <button class="know-more-btn">KnowMore</button>
+                    </div>
+                </div>
 
-    <p>Your Website:<br>
-        <input type="url" name="website">
-    </p>
+                
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://auto.mahindra.com/dw/image/v2/BKRC_PRD/on/demandware.static/-/Sites-mahindra-product-catalog/default/dw14737114/images/SCN/large/ScorpioN_602x339.png?sw=360&sh=202" alt="Mahindra SUV">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Mahindra SUV</h3>
+                        <p class="car-detail">Brand: Mahindra</p>
+                        <p class="car-detail">Model: 2022</p>
+                        <p class="car-detail">Type: AutoMatic</p>
+                        <p class="car-detail">Price:₹24,60,000</p>
+                        <p class="car-detail">Location: Nashik Maharashtra</p>
+                        <button class="know-more-btn">KnowMore</button>
+                    </div>
+                </div>
 
-    <p>Search Subject:<br>
-        <input type="search" name="search">
-    </p>
+                
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://shivamautozone.com/wp-content/uploads/2024/11/5.webp" alt="Swift Dezire">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Swift Dezire</h3>
+                        <p class="car-detail">Brand: Suzuki</p>
+                        <p class="car-detail">Model: 2021</p>
+                        <p class="car-detail">Type: Manual</p>
+                        <p class="car-detail">Price: ₹9,60,000</p>
+                        <p class="car-detail">Location: lucknow uttar pradesh India</p>
+                        <button class="know-more-btn">KnowMore</button>
+                    </div>
+                </div>
 
-    <p>
-        <input type="checkbox" name="terms"> I agree to Terms
-    </p>
-    <p>
-        <input type="submit" value="Register">
-        <input type="reset" value="Reset">
-        <input type="button" value="Click Me">
-    </p>
-</form>
+            
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://rushlane.com/wp-content/uploads/2018/09/new-maruti-swift-convertible-render-bmw-z4.jpg" alt="Suzuki Sports Car">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Suzuki Sports Car</h3>
+                        <p class="car-detail">Brand: Suzuki</p>
+                        <p class="car-detail">Model: 2023</p>
+                        <p class="car-detail">Type: AutoMatic</p>
+                        <p class="car-detail">Price:  ₹4,79,60,000</p>
+                        <p class="car-detail">Location: Mumbai Maharashtra India</p>
+                        <button class="know-more-btn">KnowMore</button>
+                    </div>
+                </div>
+
+               
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/137767/fortuner-legender-exterior-right-front-three-quarter-3.png?isig=0&q=80" alt="Tata Punch">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Toyota Fortuner Legender</h3>
+                        <p class="car-detail">Brand: Toyota</p>
+                        <p class="car-detail">Model: 2023</p>
+                        <p class="car-detail">Type: AutoMatic</p>
+                        <p class="car-detail">Price: ₹59,60,000</p>
+                        <p class="car-detail">Location: Pune Maharashtra</p>
+                        <button class="know-more-btn">KnowMore</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://www.indiacarnews.com/wp-content/uploads/2022/02/Tata-Altroz-Diesel-Dark-Edition.jpg" alt="Tata Altroz">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Tata Altroz</h3>
+                        <p class="car-detail">Brand: Tata</p>
+                        <p class="car-detail">Model: 2023</p>
+                        <p class="car-detail">Type: AutoMatic</p>
+                        <p class="car-detail">Price:  ₹9,60,000</p>
+                        <p class="car-detail">Location: Delhi India</p>
+                        <button class="know-more-btn">KnowMore</button>
+                    </div>
+                </div>
+
+               
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://www.carscoops.com/wp-content/uploads/2024/08/Mahindra-Thar-Roxx-main-1024x576.jpg" alt="Mahindra THar">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Mahindra Thar ROXX</h3>
+                        <p class="car-detail">Brand: Mahindra</p>
+                        <p class="car-detail">Model: 2022</p>
+                        <p class="car-detail">Type: Semi-AutoMatic</p>
+                        <p class="car-detail">Price: ₹19,60,000</p>
+                        <p class="car-detail">Location: Pune Maharashtra India</p>
+                        <button class="know-more-btn">KnowMore</button>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/159231/swift-right-front-three-quarter.jpeg?isig=0&q=80" alt="Swift">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Swift</h3>
+                        <p class="car-detail">Brand: Suzuki</p>
+                        <p class="car-detail">Model: 2012</p>
+                        <p class="car-detail">Type: Manual</p>
+                        <p class="car-detail">Price:  ₹9,87,000</p>
+                        <p class="car-detail">Location: Jaipur rajasthan</p>
+                        <button class="know-more-btn">KnowMore</button>
+                    </div>
+                </div>
+                 <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/138895/safari-facelift-exterior-right-front-three-quarter-39.jpeg?isig=0&q=80" alt="Mercedes G-Class">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Tata Safari</h3>
+                        <p class="car-detail">Brand: TATA</p>
+                        <p class="car-detail">Model: 2024</p>
+                        <p class="car-detail">Type: Automatic</p>
+                        <p class="car-detail">Price: ₹15,10,000</p>
+                        <p class="car-detail">Location: Jaipur , Rajasthan</p>
+                        <button class="btn know-more-btn">Know More</button>
+                    </div>
+            </div>
+             <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mercedes-Benz/G-Class/10258/1698823785104/exterior-image-164.jpg" alt="Mercedes G-Class">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Mercedes-Benz G-Class</h3>
+                        <p class="car-detail">Brand: Mercedes</p>
+                        <p class="car-detail">Model: 2024</p>
+                        <p class="car-detail">Type: Automatic</p>
+                        <p class="car-detail">Price: ₹2,33,10,000</p>
+                        <p class="car-detail">Location: Ajmer, Rajasthan</p>
+                        <button class="btn know-more-btn">Know More</button>
+                    </div>
+            </div>
+              <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/BMW/X7/10571/1689673096346/front-left-side-47.jpg" alt="">
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name"> BMW X7</h3>
+                        <p class="car-detail">Brand: BMW</p>
+                        <p class="car-detail">Model: 2024</p>
+                        <p class="car-detail">Type:AUTO MATIC </p>
+                        <p class="car-detail">Price: ₹1,69,60,000</p>
+                        <p class="car-detail">Location: lucknow uttar pradesh India</p>
+                        <button class="know-more-btn">KnowMore</button>
+                    </div>
+                </div>
+        </div>
+        
+    </section>
+
+  
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Photos Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/159231/swift-right-front-three-quarter.jpeg?isig=0&q=80" alt="Car 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://shivamautozone.com/wp-content/uploads/2024/11/5.webp" alt="Car 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/137767/fortuner-legender-exterior-right-front-three-quarter-3.png?isig=0&q=80" alt="Car 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://auto.mahindra.com/dw/image/v2/BKRC_PRD/on/demandware.static/-/Sites-mahindra-product-catalog/default/dw14737114/images/SCN/large/ScorpioN_602x339.png?sw=360&sh=202" alt="Car 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.indiacarnews.com/wp-content/uploads/2022/02/Tata-Altroz-Diesel-Dark-Edition.jpg" alt="Car 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://rushlane.com/wp-content/uploads/2018/09/new-maruti-swift-convertible-render-bmw-z4.jpg" alt="Car 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.carscoops.com/wp-content/uploads/2024/08/Mahindra-Thar-Roxx-main-1024x576.jpg" alt="Car 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://s7ap1.scene7.com/is/image/tatamotors/TornadoBlue-0-1?$PO-750-500-S$&fit=crop&fmt=png-alpha" alt="Car 8">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Land-Rover/Defender/12031/Land-Rover-Defender-2.0-l-Petrol-110-X-Dynamic-HSE/1745991566052/front-left-side-47.jpg"  alt="Car 9">
+                </div>
+                 <div class="gallery-item">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Mercedes-Benz/G-Class/10258/1698823785104/exterior-image-164.jpg" alt="" alt="Car 10">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/BMW/X7/10571/1689673096346/front-left-side-47.jpg" alt="" alt="Car 11">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://imgd.aeplcdn.com/600x337/n/cw/ec/107719/new-range-rover-exterior-left-front-three-quarter.jpeg?isig=0https://imgd.aeplcdn.com/600x337/n/cw/ec/107719/new-range-rover-exterior-left-front-three-quarter.jpeg?isig=0" alt="Car 12">
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-image">
+                    <img src="https://65e6c5c98f1f1c614d8d87d2--extraordinary-crepe-efa409.netlify.app/Images/form.png" alt="Contact Us">
+                </div>
+                <div class="contact-form-container">
+                    <h2 class="contact-title">Contact Us</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name-</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile-</label>
+                            <input type="tel" id="mobile" name="mobile" placeholder="Enter your Mobile" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email-</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your Email here" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="query">Query-</label>
+                            <textarea id="query" name="query" placeholder="Type your Query" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img  height="40px"src="https://65e6c5c98f1f1c614d8d87d2--extraordinary-crepe-efa409.netlify.app/Images/wol.png">
+                            
+                        </div>
+
+                        <span class="footer-brand">Ride Advertise</span>
+                    </div>
+                    <p class="footer-copyright">2003 Ride Advertise. All rights reserved</p>
+                    <div class="social-links">
+                        <img height="30px"  src="https://65e6c5c98f1f1c614d8d87d2--extraordinary-crepe-efa409.netlify.app/Images/inst.jpg"alt="instgram">
+                        <img height="30px" src="https://th.bing.com/th/id/OIP.ahm6Nm3l-WFEroe7xHpemgAAAA?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"alt="twitter">
+                        <img height="30px" src="https://images.ctfassets.net/23aumh6u8s0i/5rK62NTJvF2m28zXkvA6cp/476d5befbf876ad8a6583303415f8e27/facebook_login_hero"alt="facebook ">
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">pricing</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">privacy</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Stay up to date</h3>
+                    <div class="newsletter">
+                        <input type="email" placeholder="your email address" class="newsletter-input">
+                        <button class="newsletter-btn">📧</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
