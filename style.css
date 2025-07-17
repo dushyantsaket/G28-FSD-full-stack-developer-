@@ -16,9 +16,9 @@ body {
     padding: 0 20px;
 }
 
-/* Header */
+
 .header {
-    background: linear-gradient(135deg, #0e70ba, #8e44ad);
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
     padding: 1rem 0;
     position: fixed;
     top: 0;
@@ -45,7 +45,7 @@ body {
 .logo-circle {
     width: 40px;
     height: 40px;
-    background: rgb(232, 232, 232);
+    background: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -56,7 +56,7 @@ body {
 .logo-text {
     font-size: 24px;
     font-weight: bold;
-    color: #230330;
+    color: #2a1c3a;
 }
 
 .nav-menu {
@@ -73,8 +73,8 @@ body {
 }
 
 .nav-link:hover {
-    color: #2565a5;
-    text-shadow: 0 0 5px rgba(193, 179, 179, 0.5);
+    color: #f8f9fa;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 .profile-icon {
@@ -83,58 +83,55 @@ body {
 }
 
 .profile-circle {
-    width: 30px;
-    height: 50px;
-    background: rgb(147, 110, 110);
-    border-radius: 10%;
-    opacity: 0.9;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
 }
-
-/* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #d6dbe0, #e9ecef);
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
     padding: 120px 0 80px;
     text-align: center;
 }
 
 .hero-container {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 20px auto ;
     padding: 0 20px;
 }
 
 .hero-title {
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: #c56d6d;
+    color: #333;
 }
 
 .hero-title-gradient {
-    background: linear-gradient(135deg, #a38aad, #8e44ad);
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .hero-image {
-    max-width: 900px;
-    margin: 10;
-    border-radius: 10px;
+    max-width: 674px;
+    margin: 0 auto;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(69, 42, 42, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .hero-img {
-    width: 102%;
-    height: 500px;
-    margin-top: 20px;
-  
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
 }
 
-/* Car Listings */
+
 .car-listings {
     padding: 80px 0;
-    background: #fffcfc;
+    background: #f8f9fa;
 }
 
 .section-title {
@@ -216,7 +213,6 @@ body {
     box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
 }
 
-/* Gallery */
 .gallery {
     padding: 80px 0;
     background: white;
@@ -245,7 +241,7 @@ body {
     object-fit: cover;
 }
 
-/* Contact */
+
 .contact {
     padding: 80px 0;
     background: #f8f9fa;
@@ -329,7 +325,6 @@ body {
     box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
 }
 
-/* Footer */
 .footer {
     background: #333;
     color: white;
@@ -354,7 +349,7 @@ body {
 }
 
 .footer-brand {
-    color: #9b59b6;
+    color: #16abc6;
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -387,11 +382,11 @@ body {
 }
 
 .social-link.youtube {
-    background: #ff0000;
+    background: #892626;
 }
 
 .social-link.instagram {
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    background: linear-gradient(45deg, #686460, #e6683c, #dc2743, #cc2366, #bc1888);
 }
 
 .social-link:hover {
@@ -407,7 +402,7 @@ body {
 }
 
 .footer-links a {
-    color: #ccc;
+    color: #f2e9e9;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -427,7 +422,7 @@ body {
     padding: 0.75rem;
     border: 1px solid #555;
     border-radius: 8px;
-    background: #444;
+    background: #dbd5d5;
     color: white;
 }
 
@@ -436,21 +431,20 @@ body {
 }
 
 .newsletter-btn {
-    background: #9b59b6;
+    background: #b2b2b2;
     color: white;
     border: none;
     padding: 0.75rem 1rem;
     border-radius: 8px;
     cursor: pointer;
     font-size: 1.2rem;
-    transition: background 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .newsletter-btn:hover {
-    background: #8e44ad;
+    background: #b956e3;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
         gap: 1rem;
@@ -496,7 +490,7 @@ body {
     }
     
     .car-info {
-        padding: 1rem;
+        padding: 2rem;
     }
     
     .contact-form {
@@ -504,12 +498,12 @@ body {
     }
 }
 
-/* Smooth Scrolling */
+
 html {
     scroll-behavior: smooth;
 }
 
-/* Loading Animation */
+
 .car-card,
 .gallery-item {
     animation: fadeInUp 0.6s ease-out;
@@ -526,7 +520,6 @@ html {
     }
 }
 
-/* Enhanced Hover Effects */
 .car-card::before {
     content: '';
     position: absolute;
