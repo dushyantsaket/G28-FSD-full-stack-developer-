@@ -1,1 +1,113 @@
-DOM JAVASCRIPT
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  hello  world  </title>
+  
+     <div id="card-container"></div>
+  </head>
+  <body>
+    <script> 
+  let cardcontainer = document.getElementById("card-container");
+let div = document.createElement("div");
+div.style.border = "3px solid black";
+div.style.width = "250px";
+div.style.padding = "10px";
+div.style.display = "flex";
+div.style.flexDirection = "column";
+
+let image = document.createElement("img");
+image.src = "https://imgd.aeplcdn.com/664x374/n/cw/ec/191853/mercedes-benz-amg-g-class-right-front-three-quarter7.jpeg?isig=0&wm=1&q=80";
+image.style.width = "100%";
+image.style.padding = "10px";
+
+let title = document.createElement("h2");
+title.innerText = "Mercedes-Benz AMG G-Class G 63";
+
+let description = document.createElement("h5");
+description.innerText = "Power, heritage, and unparalleled performance.The all-new Mercedes-AMG G 63 combines thrilling performance with exquisite design. Its V8 engine, augmented by the AMG Performance exhaust system offers a rush of exhilarating power and joy on smooth highways and rugged offroad paths alike. Inside, luxury meets functionality. The G 63 sports a new front bumper with prominent vertical slats near the air intakes, enhancing its dynamic style, perfectly matched with the iconic sidepipes.";
+
+let price = document.createElement("h6");
+price.innerText = "Price: $3,400,000";
+
+let button = document.createElement("button");
+button.innerText = "BUY";
+button.style.padding = "10px 20px";
+button.style.background = "blue";
+button.style.color = "pink";
+
+div.append(image, title, description, price, button);
+cardcontainer.appendChild(div);
+cardcontainer.style.gap = "20px";
+
+let cardcontainer1 = document.getElementById("card-container1");
+let div1 = document.createElement("div1");
+div1.style.border = "3px solid black";
+div1.style.width = "250px";
+div1.style.padding = "10px";
+div1.style.display = "flex";
+div1.style.flexDirection = "column";
+
+let image1 = document.createElement("img");
+image1.src = "https://imgd.aeplcdn.com/664x374/n/cw/ec/191853/mercedes-benz-amg-g-class-right-front-three-quarter7.jpeg?isig=0&wm=1&q=80";
+image1.style.width = "100%";
+image1.style.padding = "10px";
+
+let title1 = document.createElement("h2");
+title1.innerText = "Mercedes-Benz AMG G-Class G 63";
+
+let description1 = document.createElement("p");
+description1.innerText = "Power, heritage, and unparalleled performance.The all-new Mercedes-AMG G 63 combines thrilling performance with exquisite design. Its V8 engine, augmented by the AMG Performance exhaust system offers a rush of exhilarating power and joy on smooth highways and rugged offroad paths alike. Inside, luxury meets functionality. The G 63 sports a new front bumper with prominent vertical slats near the air intakes, enhancing its dynamic style, perfectly matched with the iconic sidepipes.";
+
+let price1 = document.createElement("p");
+price1.innerText = "Price: $3,400,000";
+
+let button1 = document.createElement("button");
+button1.innerText = "BUY";
+button1.style.padding = "10px 20px";
+button1.style.background = "blue";
+button1.style.color = "pink";
+button1 .style.color= "gap"
+
+div.append(image1, title1, description1, price1, button1);
+cardcontainer.appendChild(div);
+cardcontainer.style.gap = "20px";
+
+
+let cardcontainer2 = document.getElementById("card-container2");
+let div2 = document.createElement("div2");
+div2.style.border = "3px solid black";
+div2.style.width = "250px";
+div2.style.padding = "10px";
+div2.style.display = "flex";
+div2.style.flexDirection = "column";
+
+
+let image2 = document.createElement("img");
+image2.src = "https://imgd.aeplcdn.com/664x374/n/cw/ec/191853/mercedes-benz-amg-g-class-right-front-three-quarter7.jpeg?isig=0&wm=1&q=80";
+image2.style.width = "100%";
+image2.style.padding = "10px";
+
+let title2 = document.createElement("h2");
+title2.innerText = "Mercedes-Benz AMG G-Class G 63";
+
+let description2= document.createElement("p");
+description2.innerText = "Power, heritage, and unparalleled performance.The all-new Mercedes-AMG G 63 combines thrilling performance with exquisite design. Its V8 engine, augmented by the AMG Performance exhaust system offers a rush of exhilarating power and joy on smooth highways and rugged offroad paths alike. Inside, luxury meets functionality. The G 63 sports a new front bumper with prominent vertical slats near the air intakes, enhancing its dynamic style, perfectly matched with the iconic sidepipes.";
+
+let price2 = document.createElement("h6");
+price2.innerText = "Price: $3,400,000";
+
+let button2 = document.createElement("button");
+button2.innerText = "BUY";
+button2.style.padding = "10px 20px";
+button2.style.background = "blue";
+button2.style.color = "pink";
+
+div.append(image2, title2, description2, price2, button2);
+cardcontainer.appendChild(div);
+
+</script>
+       </body>
+       </html>
