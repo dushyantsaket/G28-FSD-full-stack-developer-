@@ -1,1 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <div id="card-container"></div>
+    <ul id="  new list "></ul>
+  </head>
+  <body>
+    <script>
 
+
+let allData = [
+        {
+          img: "https://ik.imagekit.io/TrucksBuses/uploads/4267_BharatBenz-3528C-Tipper.jpg",
+          title: "bharatbez 3528c tipper ",
+          decscription:
+            "BharatBenz 2823C Tipper Highlights Find all the key information about the latest model of the BharatBenz 2823C tipper",
+          KeySpecifications:
+            "Engine 2694 cc - 2755 cc Power 163.6 - 201.15 bhp Torque 245 Nm - 500 Nm Seating Capacity 7 Drive Type 2WD / 4WD Mileage 11 kmpl Global NCAP Safety Rating 5 Star",
+        },
+        {
+          img: "https://cdn.trucksfloor.com/vehicles/truck/trf/eicher-hdt-pro-6035t/eicher-hdt-pro-6035t-1.jpg",
+          title: "Eicher pro 6035T Truck",
+          decscription:
+            "Eicher Pro 6035T is the flagship tipper model that comes with 12 Tyres. This tipper truck comes with a robust design with strong built quality and is majorly used in mining and construction-related...",
+          KeySpecifications:
+            "Engine 2694 cc - 2755 cc Power 163.6 - 201.15 bhp Torque 245 Nm - 500 Nm Seating Capacity 7 Drive Type 2WD / 4WD Mileage 11 kmpl Global NCAP Safety Rating 5 Star",
+        },
+        {
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTquHRZDPOw5ETfuoo2o9GjS42mjr0cq2c_IpyZtmlicy6hBv4LYCCIDQ_JQWojHGpzFiE&usqp=CAU",
+          title: " Mahindra blazo x35 - tipper trucks",
+          decscription:
+            "The Starting Price of Mahindra X35 Tipper Truck in India is approx. Rs. 35 Lacs Onwards. This Price is Ex-Showroom Price for New Delhi and may vary from Location to Location.",
+          KeySpecifications:
+            "Engine 2694 cc - 2755 cc Power 163.6 - 201.15 bhp Torque 245 Nm - 500 Nm Seating Capacity 7 Drive Type 2WD / 4WD Mileage 11 kmpl Global NCAP Safety Rating 5 Star",
+        },
+        {
+          img: "https://stimg.cardekho.com/images/carexteriorimages/630x420/Skoda/Kylaq/11528/1753967566744/front-left-side-47.jpg?tr=w-664",
+          title: " skoda kylq - suv cars",
+          decscription:
+            "The Skoda Kylaq marks the Czech carmaker's debut in India's crowded subcompact SUV segment. Along with Skoda’s signature design ",
+          KeySpecifications:
+            "Engine 2694 cc - 2755 cc Power 163.6 - 201.15 bhp Torque 245 Nm - 500 Nm Seating Capacity 7 Drive Type 2WD / 4WD Mileage 11 kmpl Global NCAP Safety Rating 5 Star",
+        },
+
+        {
+          img: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Fortuner/10904/1755075007369/exterior-image-166.jpg",
+          title: "Toyota Fortuner  ",
+          decscription:
+            "The Toyota Fortuner is one of the most beloved SUVs in India, known for its reliability and powerful engine options, including a 2.7-litre petrol and a 2.8-litre diesel engine.",
+          KeySpecifications:
+            "Engine 2694 cc - 2755 cc Power 163.6 - 201.15 bhp Torque 245 Nm - 500 Nm Seating Capacity 7 Drive Type 2WD / 4WD Mileage 11 kmpl Global NCAP Safety Rating 5 Star",
+        },
+        {
+          img: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Mercedes-Benz/G-Class/10258/1698823785104/exterior-image-164.jpg",
+          title: " Mercedes-Benz G-Class AMG G 63 Grand Edition price ",
+          decscription:
+            "Mercedes-Benz G-Class AMG G 63 Grand Edition Prices: The price of the Mercedes-Benz G-Class AMG G 63 Grand Edition in New Delhi is ₹4 Cr (Ex-showroom). ",
+          KeySpecifications:
+            "Engine 2694 cc - 2755 cc Power 163.6 - 201.15 bhp Torque 245 Nm - 500 Nm Seating Capacity 7 Drive Type 2WD / 4WD Mileage 11 kmpl Global NCAP Safety Rating 5 Star",
+        },
+        {
+          img: "https://www.topgear.com/sites/default/files/2024/02/2024-cadillac-escalade-v-series-010.jpg",
+          title: " Alex Kalogiannis",
+          decscription:
+            "Light trucks (pickups, SUVs, crossovers and minivans) now make up about 70 percent of the US auto market, while cars take up the other 30 percent. Notross America.",
+          KeySpecifications:
+            "Engine 2694 cc - 2755 cc Power 163.6 - 201.15 bhp Torque 245 Nm - 500 Nm Seating Capacity 7 Drive Type 2WD / 4WD Mileage 11 kmpl Global NCAP Safety Rating 5 Star",
+        },
+
+        {
+          img: "https://www.carshophub.co.za/XMLFeedOutput/VehicleImages/325/41KEEVERB35292/41KEEVERB35292-THO16.jpg ",
+          title: "UV400  ",
+          decscription:
+            "UV400 price for the base model starts at Rs. 15.49 Lakh and the top model price goes upto Rs. 17.69 Lakh (Avg. ex-showroom). ",
+          KeySpecifications:
+            "Engine 2694 cc - 2755 cc Power 163.6 - 201.15 bhp Torque 245 Nm - 500 Nm Seating Capacity 7 Drive Type 2WD / 4WD Mileage 11 kmpl Global NCAP Safety Rating 5 Star",
+        },
+        {
+          img: " https://imgd.aeplcdn.com/664x374/n/cw/ec/45299/jimny-exterior-right-front-three-quarter-27.jpeg?isig=0&q=80",
+          title: "Maruti Jimny",
+          decscription:
+            "The Maruti Jimny takes on the off-road sections with confidence. Its 1.5-litre petrol engine produces decent power, and the ladder frame chassis, 4x4 systn and charming SUV ",
+          KeySpecifications:
+            "Engine 2694 cc - 2755 cc Power 163.6 - 201.15 bhp Torque 245 Nm - 500 Nm Seating Capacity 7 Drive Type 2WD / 4WD Mileage 11 kmpl Global NCAP Safety Rating 5 Star",
+        },
+        {
+          img: "https://imgd.aeplcdn.com/664x374/n/cw/ec/55215/defender-exterior-right-front-three-quarter-7.jpeg?isig=0&q=80",
+          title: "Defender 130 ",
+          decscription:
+            "The Land Rover Defender offers three- and five-door options with four petrol and one diesel engine options. Its rugged build quality and off-road capability combine with excellent ride quality and on-road  .",
+          KeySpecifications:
+            "Engine 2694 cc - 2755 cc Power 163.6 - 201.15 bhp Torque 245 Nm - 500 Nm Seating Capacity 7 Drive Type 2WD / 4WD Mileage 11 kmpl Global NCAP Safety Rating 5 Star",
+        },
+        {
+          img: "https://images.overdrive.in/wp-content/odgallery/2021/03/58649_2021_Jeep_wrangler_1_272x153.jpg",
+          title: "Jeep Wrangler 2021",
+          decscription:
+            "Jeep Compass Night Eagle Edition launched at Rs 25.39 lakhJeep Avenger 4xe is the baby SUV we all wanted from Jeep  All-electric Jeep Wagoneer S debuts with over 600 km of range",
+          KeySpecifications:
+            "Engine 2694 cc - 2755 cc Power 163.6 - 201.15 bhp Torque 245 Nm - 500 Nm Seating Capacity 7 Drive Type 2WD / 4WD Mileage 11 kmpl Global NCAP Safety Rating 5 Star",
+        },
+
+        {
+          img: "http://images.overdrive.in/wp-content/uploads/2024/04/Untitled-design-2024-04-15T113537.762-900x506.png ",
+          title: "2024 Jeep Wrangler: Design",
+          decscription:
+            "Another area where we won't be spoilt for choice is under the hood. While in the United States, the Wrangler is available in 4, 6, or 8-cyli the the same 2-tem as standard.",
+          KeySpecifications:
+            "Engine 2694 cc - 2755 cc Power 163.6 - 201.15 bhp Torque 245 Nm - 500 Nm Seating Capacity 7 Drive Type 2WD / 4WD Mileage 11 kmpl Global NCAP Safety Rating 5 Star",
+        },
+        {
+          img: "https://images.overdrive.in/uploads/2025/05/Wrangler-Willys-Special-Edition-25-2025-05-be4b233f4889667c202bdfb55cf7bf8f-758x506.jpg",
+          title:
+            "Jeep Wrangler Willys 41 Special Edition launched at Rs 73.16 lakh",
+          decscription:
+            "The Jeep Wrangler Willys '41 Special Edition has been launched at Rs 73.16 lakh(ex-showroom), with just 30 units available exclusively across India.",
+          KeySpecifications:
+            "Engine 2694 cc - 2755 cc Power 163.6 - 201.15 bhp Torque 245 Nm - 500 Nm Seating Capacity 7 Drive Type 2WD / 4WD Mileage 11 kmpl Global NCAP Safety Rating 5 Star",
+        },
+      ];
+
+      function alldata() {
+        let cardcontainer = document.getElementById("card-container");
+        allData.forEach((item) => {
+          let div = document.createElement("div");
+          div.style.border = "1px solid black";
+          div.style.width = "300px";
+          div.style.padding = "10px";
+          div.style.display = "flex";
+          div.style.margin = "4px";
+          div.style.flexDirection = "column";
+          div.style.alignItems = "center";
+
+          let cardcontainer = document.getElementById("card-container");
+          cardcontainer.style.display = " grid";
+          cardcontainer.style.gridTemplateColumns = " repeat(4,1fr)";
+          cardcontainer.style.gap = " 10px ";
+          cardcontainer.style.margin = " 10px ";
+
+          let card = document.createElement("img");
+          card.style.height = "150px";
+          card.style.width = "100%";
+          card.src = item.img;
+
+          let title = document.createElement("h3");
+          title.innerText = item.title;
+          title.style.color = "black";
+          title.style.textAlign = "center";
+
+          let KeySpecifications = document.createElement("p")
+          KeySpecifications.innerText= item.KeySpecifications;
+          KeySpecifications.style.color=" black";
+          KeySpecifications.style.textAlign="center";
+
+          let decscription = document.createElement("p");
+          decscription.innerText = item.decscription;
+          decscription.style.color = "black";
+          decscription.style.textAlign = "center";
+
+          let btn = document.createElement("button");
+          btn.innerText = "buy now";
+          btn.style.backgroundColor = "black";
+          btn.style.color = "white";
+
+          div.append(card, title, decscription,KeySpecifications, btn);
+          cardcontainer.appendChild(div);
+        });
+      }
+
+      alldata();
+</script>
+    
+    </body>
+    </html>
