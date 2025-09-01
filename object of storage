@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>localStorage</title>
+    <style>
+      .body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(58, 45, 32);
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      h2 {
+        text-align: center;
+        color: #0f0d0d;
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        animation: slideIn 1s ease-in-out;
+      }
+      label {
+        font-weight: bold;
+        margin-right: 15px;
+        border-radius: 6px;
+        width: 220px;
+        transition: 0.3s;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #2b2222;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+
+      input:focus {
+        border-color: #6c63ff;
+        box-shadow: 0 0 8px rgba (108, 99, 255, 0.5);
+        outline: none;
+        transform: scale(1.05);
+        outline: none;
+        color: #000000;
+      }
+      button {
+        background-color: #6c63ff;
+        color: rgb(156, 141, 141);
+        padding: 10px 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-bottom: 20px;
+        font-size: 16px;
+        transition: 0.4s ease;
+        box-shadow: 0 0 10px #6c63ff;
+      }
+      button:hover {
+        background: #4e47d6;
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba (0, 0, 0, 0.3);
+      }
+      .switch {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .switch a {
+        color: #6c63ff;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .switch a:hover {
+        text-decoration: underline;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: rgb(89, 163, 198);
+        border-radius: 10px;
+        overflow: hidden;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #a79696;
+      }
+
+      th {
+        background-color: #6c63ff;
+        color: rgb(23, 17, 17);
+        text-transform: uppercase;
+      }
+
+      tr :hover {
+        background-color: #5d9ba4;
+        transition: 0.3s;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(-20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideDown {
+        from {
+          transform: translateY(-20px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes shake {
+        0% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-5px);
+        }
+        50% {
+          transform: translateX(5px);
+        }
+        75% {
+          transform: translateX(-5px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      .hidden {
+        display: none;
+      }
+      .success {
+        color: green;
+        text-align: center;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .switch a:hover {
+        color: #201b1b;
+      }
+
+      .error {
+        color: red;
+        text-align: center;
+        margin-bottom: 10px;
+        font-weight: bold;
+        animation: fadeIn 1s ease;
+      }
+      .container {
+        background: rgba(84, 210, 242, 0.526);
+        padding: 20px;
+        border-radius: 12px;
+        max-width: 700px;
+        margin: auto;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 1.2s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Student Registration</h2>
+
+      <label>Name</label>
+      <input type="text" id="name" /> <br />
+      <br />
+
+      <label>Email</label>
+      <input type="text" id="email" /><br />
+      <br />
+
+      <label>role</label>
+      <input type="text" id="role" /><br />
+      <br />
+
+      <label>collage</label>
+      <input type="text" id="collage" /><br />
+      <br />
+
+      <label>mobile</label>
+      <input type="text" id="mobile" /><br />
+      <br />
+
+      <label>city</label>
+      <input type="text" id="city" /><br />
+      <br />
+
+      <label>course</label>
+      <input type="text" id="course" /><br />
+      <br />
+
+      <label>Gender:</label>
+   <input type="text" id="gender" />
+      <br />
+
+      <label>Date of Birth (MM/DD/YYYY):</label>
+     <input type="text" id="dob" />
+
+      <br />
+      <label>Nationality</label>
+      <input type="text" id="Nationality" /><br />
+      <br />
+      <label>Marital Status</label>
+      <input type="text" id="Marital Status" /><br />
+      <br />
+      <label>Employee ID (if applicable):</label>
+    <input type="text" id="studentId" />
+
+      <br />
+      <label>Department</label>
+     <input type="text" id="department" />
+      <br />
+
+      <br />
+
+      <button onclick="saveData()">Click</button>
+
+            <button onclick="saveData()">Save</button>
+      <table border="1" cellpadding="10" cellspacing="0">
+        <table>
+  <thead>
+    <tr>
+      <th>SR.NO</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Role</th>
+      <th>College</th>
+      <th>Mobile</th>
+      <th>City</th>
+      <th>Course</th>
+      <th>Gender</th>
+      <th>Date of Birth</th>
+      <th>Nationality</th>
+      <th>Marital Status</th>
+      <th>Student ID</th>
+      <th>Department</th>
+    </tr>
+  </thead>
+  <tbody id="dataBody"></tbody>
+</table>
+
+        
+    </div>
+
+    <script>
+      let allData = JSON.parse(localStorage.getItem("user")) || [];
+      function saveData() {
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const roleInput = document.getElementById("role");
+        const collageInput = document.getElementById("collage");
+        const mobileInput = document.getElementById("mobile");
+        const cityInput = document.getElementById("city");
+        const courseInput = document.getElementById("course");
+       const GenderInput = document.getElementById("gender");
+      const DateofBirthInput = document.getElementById("dob");
+
+        const NationalityInput = document.getElementById("Nationality");
+        const MaritalStatusInput = document.getElementById("Marital Status");
+       const StudentIDInput = document.getElementById("studentId");
+        const DepartmentInput = document.getElementById("department");
+
+        allData.push({
+          name: nameInput.value,
+          email: emailInput.value,
+          role: roleInput.value,
+          collage: collageInput.value,
+          mobile: mobileInput.value,
+          city: cityInput.value,
+          course: courseInput.value,
+          Gender: GenderInput.value,
+          DateofBirth: DateofBirthInput.value,
+          Nationality: NationalityInput.value,
+          MaritalStatus: MaritalStatusInput.value,
+          StudentID: StudentIDInput.value,
+          Department: DepartmentInput.value,
+        });
+
+        localStorage.setItem("user", JSON.stringify(allData));
+        nameInput.value = "";
+        emailInput.value = "";
+        roleInput.value = "";
+        collageInput.value = "";
+        mobileInput.value = "";
+        cityInput.value = "";
+        courseInput.value = "";
+        GenderInput.value = "";
+        DateofBirthInput.value = "";
+        NationalityInput.value = "";
+        StudentID.value = "";
+        Department.value = "";
+
+        displayData();
+      }
+
+      function displayData() {
+        const dataBody = document.getElementById("dataBody");
+        dataBody.innerHTML = "";
+
+        allData.forEach((items, index) => {
+          const row = document.createElement("tr");
+
+          const td1 = document.createElement("td");
+          td1.textContent = index + 1;
+
+          const td2 = document.createElement("td");
+          td2.textContent = items.name;
+
+          const td3 = document.createElement("td");
+          td3.textContent = items.email;
+
+          const td4 = document.createElement("td");
+          td4.textContent = items.role;
+
+          const td5 = document.createElement("td");
+          td5.textContent = items.collage;
+
+          const td6 = document.createElement("td");
+          td6.textContent = items.mobile;
+
+          const td7 = document.createElement("td");
+          td7.textContent = items.city;
+
+          const td8 = document.createElement("td");
+          td8.textContent = items.course;
+
+          const td9 = document.createElement("td");
+          td9.textContent = items.Gender;
+
+          const td10 = document.createElement("td");
+          td10.textContent = items.DateofBirth;
+
+          const td11 = document.createElement("td");
+          td11.textContent = items.Nationality;
+
+          const td12 = document.createElement("td");
+          td12.textContent = items.StudentID;
+
+          const td13 = document.createElement("td");
+          td13.textContent = items.Department;
+
+          row.append(
+            td1,
+            td2,
+            td3,
+            td4,
+            td5,
+            td6,
+            td7,
+            td8,
+            td9,
+            td10,
+            td11,
+            td12,
+            td13
+          );
+
+          dataBody.append(row);
+        });
+      }
+
+      displayData();
+    </script>
+  </body>
+</html>
